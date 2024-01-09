@@ -28,8 +28,6 @@ export class CartService {
         'cart_items.count',
         'products.id',
         'products.title',
-        'products.description',
-        'products.price',
       )
       .join('products', 'cart_items.product_id', 'products.id')
       .where('cart_items.cart_id', cart.id);

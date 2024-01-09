@@ -9,6 +9,9 @@ const dbOptions = {
   database: PG_DB,
   user: PG_USER,
   password: PG_PASSWORD,
+  ssl: {
+    rejectUnauthorized: false
+  }
 };
 
 export default knex({
